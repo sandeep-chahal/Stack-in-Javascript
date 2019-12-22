@@ -1,3 +1,4 @@
+// Stack Using LinkedList
 class Node{
   constructor(){
     this.value = null,
@@ -40,11 +41,38 @@ class Stack{
 
 }
 
-const myStack = new Stack();
+// const myStack = new Stack();
+// myStack.push("A");
+// myStack.push("B");
+// myStack.push("C");
+// myStack.push("D");
+// myStack.pop();
+// myStack.pop();
+// myStack.peek();
+
+// Stack Using Array
+class Stack2{
+  constructor(){
+    this.data = [];
+  }
+  push(value){
+    this.data.push(value);
+    return this;
+  }
+  pop(){
+    this.data.pop();
+    return this;
+  }
+  peek(){
+    return this.data[this.data.length-1];
+  }
+}
+
+const myStack = new Stack2();
 myStack.push("A");
 myStack.push("B");
 myStack.push("C");
 myStack.push("D");
 myStack.pop();
 myStack.pop();
-myStack.peek();
+// myStack.peek();
